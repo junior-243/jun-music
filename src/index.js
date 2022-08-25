@@ -7,8 +7,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>,
+  <div style={{
+    // background: require('./images/music.jpeg')
+  }} className="bg-secondary">
+    <div  style={{
+      // background: 'rgba(34,34,34,0.6)'
+    }}>
+      <Provider store={store}>
+        <AppRouter />
+      </Provider>
+    </div>
+
+  </div>,
   document.getElementById('root')
 );

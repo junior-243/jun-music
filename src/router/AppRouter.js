@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, } from 'react-router-dom';
 import Home from '../components/Home';
 import RedirectPage from '../components/RedirectPage';
 import Dashboard from '../components/Dashboard';
@@ -35,7 +35,7 @@ class AppRouter extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="main">
+        <div className="main" >
           <Switch>
             <Route
               path="/"
